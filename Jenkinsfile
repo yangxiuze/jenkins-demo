@@ -22,7 +22,6 @@ node('haimaxy-jnlp') {
             sh "docker login -u ${dockerHubUser} -p ${dockerHubPassword}"
             sh "docker push zemys6999/jenkins-demo:${build_tag}"
         }
-        }
     }
     stage('Deploy') {
         echo "5. Deploy Stage"
