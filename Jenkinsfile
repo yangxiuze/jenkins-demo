@@ -1,4 +1,4 @@
-node('haimaxy-jnlp') {
+node('k8s-jenkins') {
     stage('Prepare') {
         echo "1.Prepare Stage"
         checkout scm
